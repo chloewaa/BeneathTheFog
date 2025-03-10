@@ -1,36 +1,47 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float _speed = 5.0f;
+    //Movement speed
+    [SerializeField] private float moveSpeed = 5f; 
+    //Current input vector
+    private Vector2 moveInput;                       
+    private Rigidbody2D rb;                          
+    private PlayerInputActions inputActions;         
+    //Reference to the Animator component
+    private Animator animator;                       
 
-    //Animator
-    private Animator _animator;
-
-    void Start()
-    {
-        //Get animator component
-        _animator = GetComponent<Animator>();
+    private void Awake() {
+        //Initialize input actions, Rigidbody2D, and Animator
+        inputActions = new PlayerInputActions();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        //Basic Movement
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+    private void OnEnable() {
+        //Enable the Player action map
+        inputActions.Player.Enable();
+    }
 
-        Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
+    private void OnDisable() {
+        //Disable the Player action map
+        inputActions.Player.Disable();
+    }
 
-        transform.Translate(direction * _speed * Time.deltaTime);
+    private void Update() {
+        //Poll the input every frame to capture all simultaneous key presses.
+        moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
-        //Calculate the magnitude of the input
-        float magnitude = direction.magnitude;
+        //Update animator parameters based on the current input.
+        if (animator != null) {
+            animator.SetFloat("Horizontal", moveInput.x);
+            animator.SetFloat("Vertical", moveInput.y);
+        }
+    }
 
-        //Set the parameters in the animator
-        _animator.SetFloat("Speed", magnitude);
-        _animator.SetFloat("Horizontal", horizontalInput);
-        _animator.SetFloat("Vertical", verticalInput);
-        
+    private void FixedUpdate() {
+        //Normalize the input to ensure diagonal movement isn't faster
+        rb.linearVelocity = moveInput.normalized * moveSpeed;
     }
 }
