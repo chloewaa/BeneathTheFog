@@ -55,6 +55,8 @@ UnityEngine
 Experimental
 Rendering
 Universal
+FullScreenPassRendererFeature
+
 RenderQueueType
 RenderObjects
 AssetModificationProcessor

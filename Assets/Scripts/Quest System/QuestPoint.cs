@@ -3,6 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class QuestPoint : MonoBehaviour
 {
+    //String variable to store the knot name 
+    [Header("Dialogue (Optional)")]
+    [SerializeField] private string dialogueknotName;
+
     [Header("Quest")]
     [SerializeField] private QuestInfoSO questInfoForPoint;
 
@@ -40,9 +44,9 @@ public class QuestPoint : MonoBehaviour
             Debug.LogError("GameEventsManager.instance.inputEvents is null!");
         }
 
-        // Subscribe to the quest state change event.
+        //Subscribe to the quest state change event.
         GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
-        // Subscribe to the input submit event.
+        //Subscribe to the input submit event.
         GameEventsManager.instance.inputEvents.onSubmitPressed += SubmitPressed;
     }
 
@@ -57,18 +61,26 @@ public class QuestPoint : MonoBehaviour
         }
     }
 
-    // This method is called when the input events script fires the submit event.
-    private void SubmitPressed()
+    //This method is called when the input events script fires the submit event.
+    private void SubmitPressed(InputEventContext inputEventContext)
     {
-        if(!playerIsNear)
+        if(!playerIsNear || !inputEventContext.Equals(InputEventContext.DEFAULT)) {
             return;
-
-        //start or finish the quest
-        if(currentQuestState.Equals(QuestState.CAN_START) && startPoint) {
-            GameEventsManager.instance.questEvents.StartQuest(questID);
         }
-        else if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint) {
-            GameEventsManager.instance.questEvents.FinishQuest(questID);
+
+        //if the knot name is defined, try to start the dialogue
+        if(!dialogueknotName.Equals("")) {
+            GameEventsManager.instance.dialogueEvents.EnterDialogue(dialogueknotName);
+        }
+
+        //Otherwise, start or finish the quest
+        else{ 
+            if(currentQuestState.Equals(QuestState.CAN_START) && startPoint) {
+                GameEventsManager.instance.questEvents.StartQuest(questID);
+            }
+            else if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint) {
+                GameEventsManager.instance.questEvents.FinishQuest(questID);
+            }
         }
     }
 

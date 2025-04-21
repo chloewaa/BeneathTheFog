@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private PlayerInputActions inputActions;         
     //Reference to the Animator component
     private Animator animator;                       
+    private bool movementEnabled = true;
 
     private void Awake() {
         //Initialize input actions, Rigidbody2D, and Animator
@@ -22,14 +25,31 @@ public class PlayerController : MonoBehaviour
     private void OnEnable() {
         //Enable the Player action map
         inputActions.Player.Enable();
+
+        // Subscribe to dialogue events
+        GameEventsManager.instance.dialogueEvents.onDialogueStarted += DisableMovement;
+        GameEventsManager.instance.dialogueEvents.onDialogueFinished += EnableMovement;
+        
+        // Optional: Also listen to input context changes
+        GameEventsManager.instance.inputEvents.onInputContextChanged += OnInputContextChanged;
     }
 
     private void OnDisable() {
         //Disable the Player action map
         inputActions.Player.Disable();
+
+        // Unsubscribe from dialogue events
+        GameEventsManager.instance.dialogueEvents.onDialogueStarted -= DisableMovement;
+        GameEventsManager.instance.dialogueEvents.onDialogueFinished -= EnableMovement;
+        
+        // Optional: Also stop listening to input context changes
+        GameEventsManager.instance.inputEvents.onInputContextChanged -= OnInputContextChanged;
     }
 
     private void Update() {
+        // Only process movement if enabled
+        if (!movementEnabled) return;
+
         //Poll the input every frame to capture all simultaneous key presses.
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
@@ -43,5 +63,22 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate() {
         //Normalize the input to ensure diagonal movement isn't faster
         rb.linearVelocity = moveInput.normalized * moveSpeed;
+    }
+
+    private void DisableMovement()
+    {
+        movementEnabled = false;
+        // Optional: immediately stop any movement that's in progress
+        // For example: rigidbody.velocity = Vector3.zero;
+    }
+    
+    private void EnableMovement()
+    {
+        movementEnabled = true;
+    }
+    
+    private void OnInputContextChanged(InputEventContext newContext)
+    {
+        movementEnabled = (newContext == InputEventContext.DEFAULT);
     }
 }

@@ -137,4 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d83f73db21c4f4eaae34abc2767ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueknotName: 
   questInfoForPoint: {fileID: 11400000, guid: 289eb0f8666e5b54483cfa5fdf21d18e, type: 2}
+  startPoint: 1
+  finishPoint: 1

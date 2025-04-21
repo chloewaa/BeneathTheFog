@@ -109,12 +109,12 @@ public class Quest
         else
         {
             // Display the status of all quest steps up to the current step.
-            for (int i = 0; i < currentQuestStepIndex; i++)
+            for (int i = 0; i < currentQuestStepIndex && i < questStepStates.Length; i++)
             {
                 fullStatus += "<s>" + questStepStates[i].status + "</s>\n";
             }
             // Display the status of the current quest step.
-            if (CurrentStepExists())
+            if (CurrentStepExists() && currentQuestStepIndex < questStepStates.Length)
             {
                 fullStatus += questStepStates[currentQuestStepIndex].status;
             }

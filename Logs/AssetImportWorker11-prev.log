@@ -1,0 +1,912 @@
+Using pre-set license
+Built from '6000.0/release' branch; Version is '6000.0.44f1 (101c91f3a8fb) revision 1055889'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 65211 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.44f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+D:/Github/BeneathTheFog
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+60814
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: D:/Github/BeneathTheFog
+D:/Github/BeneathTheFog
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [3696]  Target information:
+
+Player connection [3696]  * "[IP] 172.20.3.251 [Port] 0 [Flags] 2 [Guid] 667890256 [EditorId] 667890256 [Version] 1048832 [Id] WindowsEditor(7,BattleStation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [3696] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3696] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/BeneathTheFog/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.7216
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.004241 seconds.
+- Loaded All Assemblies, in  0.404 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.395 seconds
+Domain Reload Profiling: 796ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (122ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (396ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (336ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (171ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.838 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.041 seconds
+Domain Reload Profiling: 1876ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (551ms)
+		LoadAssemblies (363ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (199ms)
+			BuildScriptInfoCaches (58ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1042ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (873ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (605ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.40 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 227 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6764 unused Assets / (4.5 MB). Loaded Objects now: 7483.
+Memory consumption went from 186.3 MB to 181.8 MB.
+Total: 19.252600 ms (FindLiveObjects: 1.200200 ms CreateObjectMapping: 1.748600 ms MarkObjects: 10.749800 ms  DeleteObjects: 5.552400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 689017.013511 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_311.asset
+  artifactKey: Guid(b09d4e91d2370a84fa0dd5d00e261112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_311.asset using Guid(b09d4e91d2370a84fa0dd5d00e261112) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c2bee4bd7ee4d87e248101f60afb291') in 0.223858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_327.asset
+  artifactKey: Guid(741d5a4fae8f3874aa8b27a61717c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_327.asset using Guid(741d5a4fae8f3874aa8b27a61717c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a4e81076ca24249662520b0ab6d787b') in 0.1271846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_24.asset
+  artifactKey: Guid(6592fd21ec8c7174194b0fcc6032864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_24.asset using Guid(6592fd21ec8c7174194b0fcc6032864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a963980c4b4e6fbf5fc52881b2d4d5ae') in 0.0504708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_132.asset
+  artifactKey: Guid(cda27c28ff7aa9d42b6935a952e643df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_132.asset using Guid(cda27c28ff7aa9d42b6935a952e643df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ac83789e3ae3efb56e855b24788ecd3') in 0.0448617 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_46.asset
+  artifactKey: Guid(81c057811e287774bab06977d4c8a411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_46.asset using Guid(81c057811e287774bab06977d4c8a411) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f549e4a052133a7bcff7961641fbe9c') in 0.0497414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_467.asset
+  artifactKey: Guid(de8a7f930d2a18641837a6aa8970689f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_467.asset using Guid(de8a7f930d2a18641837a6aa8970689f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10d91deee67081a6dd627b7d125c3a12') in 0.0458814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_4.asset
+  artifactKey: Guid(91cad20238f157e4692d357018f81939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_4.asset using Guid(91cad20238f157e4692d357018f81939) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce94124e9974b2d706c3acdba81183a4') in 0.0492672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_135.asset
+  artifactKey: Guid(4c57d3dfacfaf3846959f34ff609fdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_135.asset using Guid(4c57d3dfacfaf3846959f34ff609fdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8043d2c39356717f32dae1c2939d245') in 0.0469503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_488.asset
+  artifactKey: Guid(35aeae9f3b1aa39469badab092f2a390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_488.asset using Guid(35aeae9f3b1aa39469badab092f2a390) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49e027e354f06b61cb307e505b9f48e8') in 0.0409857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_109.asset
+  artifactKey: Guid(ace89f7eed181034b940cf2d4b2d1e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_109.asset using Guid(ace89f7eed181034b940cf2d4b2d1e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50c476effce10e54812c838a2301230c') in 0.0380764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_131.asset
+  artifactKey: Guid(da80988180f0f564f8e63cd52b1cfbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_131.asset using Guid(da80988180f0f564f8e63cd52b1cfbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c3363d565f628a1aa799c0126c53da0') in 0.0378419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_541.asset
+  artifactKey: Guid(5a4775fb98362dc4eb850ca18d5e85a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_541.asset using Guid(5a4775fb98362dc4eb850ca18d5e85a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42db3120f2f931d0ac5200e5d3e459e6') in 0.0428787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_468.asset
+  artifactKey: Guid(ea00e496940ac2e488d5b2fce7fac328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_468.asset using Guid(ea00e496940ac2e488d5b2fce7fac328) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcd41f68c4a808e01adf645fc3125822') in 0.0393579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_340.asset
+  artifactKey: Guid(5c0af8293a76b144e89aa5bfc50a0131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_340.asset using Guid(5c0af8293a76b144e89aa5bfc50a0131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5900add833e42ec65ab37b8217a567b0') in 0.0442736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_560.asset
+  artifactKey: Guid(cae3f838c8120b545a0b7648ac19f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_560.asset using Guid(cae3f838c8120b545a0b7648ac19f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '040622c34a086ef576b1d5eb042d8a1f') in 0.0383207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_409.asset
+  artifactKey: Guid(3b8e514eb7c86bc40a877e8887c10355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_409.asset using Guid(3b8e514eb7c86bc40a877e8887c10355) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82a62a79b59f83d0f5485b42065c4391') in 0.0385219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_484.asset
+  artifactKey: Guid(751dbc74efb5d0c4aaca4c7a6d46d89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_484.asset using Guid(751dbc74efb5d0c4aaca4c7a6d46d89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b704541dd0134909aea36f73f131955') in 0.0422599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_329.asset
+  artifactKey: Guid(7a0567c9794320e4fa46964f26024236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_329.asset using Guid(7a0567c9794320e4fa46964f26024236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21291312da4c31779fc8c41e1413e31c') in 0.0392202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_117.asset
+  artifactKey: Guid(7a16be61b94ba234392db128918572fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_117.asset using Guid(7a16be61b94ba234392db128918572fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb5fb7223166ef3b7d4e5044fcecfe88') in 0.0431469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_503.asset
+  artifactKey: Guid(24a5bb730cca3224f85ff3c5aa89f2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_503.asset using Guid(24a5bb730cca3224f85ff3c5aa89f2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5692050b5ac6b355e15fd0056518ce73') in 0.0384235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_694.asset
+  artifactKey: Guid(1fbd3f067fe55ba4f98c99d152c740c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_694.asset using Guid(1fbd3f067fe55ba4f98c99d152c740c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aef49d2b8ff3a7dfab29c3402b28efa9') in 0.1128762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_134.asset
+  artifactKey: Guid(8d17d1fc3808f964f80ded6905e60890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_134.asset using Guid(8d17d1fc3808f964f80ded6905e60890) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7d305174872dfeb5bd25ef7d2cd2ebe') in 0.0386988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_486.asset
+  artifactKey: Guid(54e46d62e2f33c143a0a534becbecb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_486.asset using Guid(54e46d62e2f33c143a0a534becbecb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '992dc3a3eaf92abd0b8bc575fbc910cc') in 0.0422698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_5.asset
+  artifactKey: Guid(f3e9a1791a2c7584da9eabfaf6e4c3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_5.asset using Guid(f3e9a1791a2c7584da9eabfaf6e4c3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b3da4a0145616c0cb2115afe6689913') in 0.0394512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_448.asset
+  artifactKey: Guid(7258c625f0411954cbafe5ed18871020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_448.asset using Guid(7258c625f0411954cbafe5ed18871020) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72544a3b1c01d559f3a692b1a60ea0fd') in 0.0464098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_120.asset
+  artifactKey: Guid(5ad1b060f7a77c640b455fd7c07e0e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_120.asset using Guid(5ad1b060f7a77c640b455fd7c07e0e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '385891c37b0bc056f5f6b73ee3cfaa24') in 0.043214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_13.asset
+  artifactKey: Guid(46ec34ab349dcf5458660f1b814707da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_13.asset using Guid(46ec34ab349dcf5458660f1b814707da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c09ba526dc8e20fc0b8a679d059f7767') in 0.0402681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_141.asset
+  artifactKey: Guid(625e71bc6c263a1478f53a3ac8be1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_141.asset using Guid(625e71bc6c263a1478f53a3ac8be1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6eea92185c5721eb3d144e95e6932d8') in 0.0409281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_314.asset
+  artifactKey: Guid(0134caae3eaca8e45a6480b5c22532ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_314.asset using Guid(0134caae3eaca8e45a6480b5c22532ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60e26b28606d26844bb2025c5a580e7c') in 0.043512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_107.asset
+  artifactKey: Guid(2d849d757953e034caf3d4217c52336b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_107.asset using Guid(2d849d757953e034caf3d4217c52336b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e187b2ae123e67e34393cc33fbd5aa0') in 0.044905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_345.asset
+  artifactKey: Guid(7a9d59d5e7997264e8f5d3b001921420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_345.asset using Guid(7a9d59d5e7997264e8f5d3b001921420) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f12cdc9147653aab8df129ed1d4d45b') in 0.0403023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_21.asset
+  artifactKey: Guid(061a2a77d6ec75341b5aa83d2f8cc678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_21.asset using Guid(061a2a77d6ec75341b5aa83d2f8cc678) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8527b478f19d6a78d1f112c61741f442') in 0.0419715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_619.asset
+  artifactKey: Guid(fd13fa1c1ae19864185cd299830066c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_619.asset using Guid(fd13fa1c1ae19864185cd299830066c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0019562e7ae4192b08b6bf88017e9572') in 0.0455574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_727.asset
+  artifactKey: Guid(4c3514d229f45654a99451cca890cf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_727.asset using Guid(4c3514d229f45654a99451cca890cf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acd861a122bcca1b5fb1043ecbe3eca2') in 0.0462138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_10.asset
+  artifactKey: Guid(2285996251d2a9d4e83477957d2c5e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_10.asset using Guid(2285996251d2a9d4e83477957d2c5e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7dcfb8aae2ae31f32b8aef38c0fbef1') in 0.0469679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_114.asset
+  artifactKey: Guid(e5fc12628697c4e42b643b38994547a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_114.asset using Guid(e5fc12628697c4e42b643b38994547a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b1d6001149ea155b4c9a3fedd31fcd1') in 0.0488027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_346.asset
+  artifactKey: Guid(2ece0a0baf2022543b6a43d079fb4afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_346.asset using Guid(2ece0a0baf2022543b6a43d079fb4afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34bd8e8e3a16320e258cce83b23f95a7') in 0.0426274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_455.asset
+  artifactKey: Guid(d391f4b901eb6284aab62d5f2675e3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_455.asset using Guid(d391f4b901eb6284aab62d5f2675e3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b398bee676c2de53ccdecc99f19cad4') in 0.0386595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_335.asset
+  artifactKey: Guid(c88e435a4ee5d624d96e8cb1abfcc8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_335.asset using Guid(c88e435a4ee5d624d96e8cb1abfcc8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19e1c2900426679dcc4c7cc27641580c') in 0.1033994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_9.asset
+  artifactKey: Guid(603601352db908941b134f1fb5d68575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_9.asset using Guid(603601352db908941b134f1fb5d68575) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b31c1f2ccb8dc0237bf48cff33313bfa') in 0.0403616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_683.asset
+  artifactKey: Guid(f73d16d6f4217e84ea63cfb3c16ad8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_683.asset using Guid(f73d16d6f4217e84ea63cfb3c16ad8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb6b4cec1143b65e365c9ba802924f89') in 0.0385874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_133.asset
+  artifactKey: Guid(71b6a7c1bfd6d98479e3f6a5a97810c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_133.asset using Guid(71b6a7c1bfd6d98479e3f6a5a97810c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f488c7455fb0b14328873fdb516bcefa') in 0.0409912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_635.asset
+  artifactKey: Guid(8f9e779b5eb99304b96ae82103da78f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_635.asset using Guid(8f9e779b5eb99304b96ae82103da78f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70514809839fbbf71d663c50c1954271') in 0.0375615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_357.asset
+  artifactKey: Guid(47c6ba433a3c0b347bf580d9c1715769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_357.asset using Guid(47c6ba433a3c0b347bf580d9c1715769) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e9b8ee906fb685f2387cde457eae5ca') in 0.0483841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_690.asset
+  artifactKey: Guid(c211d32c7f10430438c51de6f114c1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_690.asset using Guid(c211d32c7f10430438c51de6f114c1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8eef233deb4f064e21ac2469c0afb87f') in 0.0382862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_566.asset
+  artifactKey: Guid(960d795118b81a94087077b7e6a15730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_566.asset using Guid(960d795118b81a94087077b7e6a15730) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3db0e4eab38da6f3247286c5848e47b8') in 0.0452847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_142.asset
+  artifactKey: Guid(ae9be962bdff08e4f9604fc7c2570cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_142.asset using Guid(ae9be962bdff08e4f9604fc7c2570cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e8d682332c3e6e213a841ffb2460638') in 0.0400292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_344.asset
+  artifactKey: Guid(859ce46d08af38c4ea3446ce0686ca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_344.asset using Guid(859ce46d08af38c4ea3446ce0686ca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76388b4b4f25693b547eacece1516b81') in 0.042537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_420.asset
+  artifactKey: Guid(7f9e197d0ae60e140a29127b7404c9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_420.asset using Guid(7f9e197d0ae60e140a29127b7404c9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea52774e785d16ff29b93070ed3e95fb') in 0.0419637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_522.asset
+  artifactKey: Guid(d531af683c2945846aa463ecfbafc038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_522.asset using Guid(d531af683c2945846aa463ecfbafc038) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a23fa38bc29a3e346106114bd4b76760') in 0.0381658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_462.asset
+  artifactKey: Guid(fce16c414ecbeb64db92c578d0e91f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_462.asset using Guid(fce16c414ecbeb64db92c578d0e91f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd113446a0a202cdcafefa728cad9868') in 0.0395499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_464.asset
+  artifactKey: Guid(2124252a1db34c5439148d11e52640ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_464.asset using Guid(2124252a1db34c5439148d11e52640ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee370a6c881f90dc56f75943678d7908') in 0.0435033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_544.asset
+  artifactKey: Guid(747580dfe553b504c804acb51b2f9aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_544.asset using Guid(747580dfe553b504c804acb51b2f9aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3533eed08dd998edff759a117a66e032') in 0.0423381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.300043 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32.png
+  artifactKey: Guid(213d1c84b2e1c47449a9b6cac87b3baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32.png using Guid(213d1c84b2e1c47449a9b6cac87b3baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c357c29c59fe8aa0bc891a1353071dc') in 1.3517851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 71.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (1.8 MB). Loaded Objects now: 7494.
+Memory consumption went from 150.3 MB to 148.5 MB.
+Total: 12.257700 ms (FindLiveObjects: 0.446200 ms CreateObjectMapping: 0.349900 ms MarkObjects: 11.147600 ms  DeleteObjects: 0.312200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.628 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.153 seconds
+Domain Reload Profiling: 3781ms
+	BeginReloadAssembly (391ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (126ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (2068ms)
+		LoadAssemblies (2123ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (190ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1154ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (724ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (524ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6762 unused Assets / (4.3 MB). Loaded Objects now: 7496.
+Memory consumption went from 157.7 MB to 153.4 MB.
+Total: 17.841900 ms (FindLiveObjects: 1.900200 ms CreateObjectMapping: 1.641500 ms MarkObjects: 9.290700 ms  DeleteObjects: 5.007600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.722 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.877 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (449ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (201ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (179ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (877ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (674ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6762 unused Assets / (4.3 MB). Loaded Objects now: 7498.
+Memory consumption went from 157.8 MB to 153.5 MB.
+Total: 18.282700 ms (FindLiveObjects: 1.399800 ms CreateObjectMapping: 1.789600 ms MarkObjects: 10.405400 ms  DeleteObjects: 4.686300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 14284.434121 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_48.asset
+  artifactKey: Guid(6f635cef783e00a41ba3cde7f09e208a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_48.asset using Guid(6f635cef783e00a41ba3cde7f09e208a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b65cf100635344758e78f51f7832a7eb') in 0.5540897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_50.asset
+  artifactKey: Guid(f4101235b17dee74296d5ceb860c98a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_50.asset using Guid(f4101235b17dee74296d5ceb860c98a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2129512838025b5f2a231477783acbd') in 0.0467451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_59.asset
+  artifactKey: Guid(07bbefd11610f7445a021bb4749d1b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_59.asset using Guid(07bbefd11610f7445a021bb4749d1b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85893f8df80a492291c72aa1b17a06d6') in 0.0507187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_53.asset
+  artifactKey: Guid(86fb4f5e5158e0e4ab515fca2f7383d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_53.asset using Guid(86fb4f5e5158e0e4ab515fca2f7383d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f59572775a7b7995d82a86200215738') in 0.0449888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_54.asset
+  artifactKey: Guid(ba578b1425b31f4438ea31932c2884b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_54.asset using Guid(ba578b1425b31f4438ea31932c2884b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e5629d53cb3198e6bbe3a3518de5965') in 0.0469991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_51.asset
+  artifactKey: Guid(cc8f87d4e9223bc4bb12648533f4af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_51.asset using Guid(cc8f87d4e9223bc4bb12648533f4af80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74186e0ab0ec967655d36873dc107ba1') in 0.0469927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_62.asset
+  artifactKey: Guid(b232aed7473e39d4f88b128065c649a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_62.asset using Guid(b232aed7473e39d4f88b128065c649a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93be6df207dd2a8dc7663eee376283b8') in 0.0525389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Village/Serene_Village_32x32_56.asset
+  artifactKey: Guid(0379d70cd7afe964fa1238ec68c00e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Village/Serene_Village_32x32_56.asset using Guid(0379d70cd7afe964fa1238ec68c00e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbbe67afe56f58aedaae11ac584a8766') in 0.0497442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1197
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.884220 seconds.
+  path: Assets/Tilesets/FloorTileAtlas.spriteatlasv2
+  artifactKey: Guid(9e8f00bd8be6d74429e66180ed796eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/FloorTileAtlas.spriteatlasv2 using Guid(9e8f00bd8be6d74429e66180ed796eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82b930567490a344b147700ce553404c') in 0.0024523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3239.456679 seconds.
+  path: Assets/Fog/Fog.mat
+  artifactKey: Guid(e738087eee7c65447be0f68037494b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fog/Fog.mat using Guid(e738087eee7c65447be0f68037494b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2d885c2fcbb6a1341c90a43a92f955d') in 0.4434448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.669 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.894 seconds
+Domain Reload Profiling: 1562ms
+	BeginReloadAssembly (210ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (23ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (386ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (174ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (152ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (895ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (673ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (489ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6762 unused Assets / (4.7 MB). Loaded Objects now: 7563.
+Memory consumption went from 160.8 MB to 156.1 MB.
+Total: 19.462000 ms (FindLiveObjects: 1.531300 ms CreateObjectMapping: 1.425500 ms MarkObjects: 10.615500 ms  DeleteObjects: 5.888000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.789 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.979 seconds
+Domain Reload Profiling: 1769ms
+	BeginReloadAssembly (213ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (482ms)
+		LoadAssemblies (355ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (204ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (980ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (770ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (560ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6762 unused Assets / (4.4 MB). Loaded Objects now: 7565.
+Memory consumption went from 160.6 MB to 156.2 MB.
+Total: 19.602800 ms (FindLiveObjects: 1.285500 ms CreateObjectMapping: 1.609300 ms MarkObjects: 11.199900 ms  DeleteObjects: 5.506200 ms)
+
+Prepare: number of updated asset objects reloaded= 0

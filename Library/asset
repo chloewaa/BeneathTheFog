@@ -33,5 +33,33 @@ MonoBehaviour:
     warnings: []
     todos: []
     masterInkAssets: []
+    localIncludePaths:
+    - CollectCoinsStartNPC.ink
+    - CollectCoinsEndNPC.ink
+    includes:
+    - {fileID: 102900000, guid: f5c0086ee80c7e0458cf0c03a2a9f925, type: 3}
+    - {fileID: 102900000, guid: 8581de289e05c274b93c0ca492bb4cad, type: 3}
+  - inkAsset: {fileID: 102900000, guid: 8581de289e05c274b93c0ca492bb4cad, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 7c75bcf5286b4404eaa393ff7c79f2ac, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets:
+    - {fileID: 102900000, guid: 4bfdf1b43d6c0054badd1ee2d6bc4a79, type: 3}
+    localIncludePaths: []
+    includes: []
+  - inkAsset: {fileID: 102900000, guid: f5c0086ee80c7e0458cf0c03a2a9f925, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 0055ebbbbc307354aaa9023b69dd7bfd, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets:
+    - {fileID: 102900000, guid: 4bfdf1b43d6c0054badd1ee2d6bc4a79, type: 3}
     localIncludePaths: []
     includes: []
