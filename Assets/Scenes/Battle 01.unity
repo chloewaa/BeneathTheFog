@@ -3080,10 +3080,10 @@ RectTransform:
   - {fileID: 1619820195}
   m_Father: {fileID: 63393021}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -478, y: -281}
-  m_SizeDelta: {x: 160, y: 20}
+  m_SizeDelta: {x: 60, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383365200
 MonoBehaviour:
@@ -3258,7 +3258,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.4639587, y: -8.927864, z: 1.2115593, w: -137.62666}
+  m_margin: {x: -4.4639587, y: -8.927864, z: -126.61931, w: -137.62666}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4483,7 +4483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3616a67386ac9247b5a40d7e4c4ab2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleSceneName: Battle 01
   attackButton: {fileID: 898255167}
   defendButton: {fileID: 1926392022}
   healButton: {fileID: 1406188265}
@@ -4495,13 +4494,14 @@ MonoBehaviour:
   playerBattleStation: {fileID: 2062749568}
   enemyBattleStation: {fileID: 1914625721}
   explorationSceneName: Scene 01
+  battleSceneName: Battle 01
   dialogueText: {fileID: 442254734}
   playerHUD: {fileID: 63393022}
   enemyHUD: {fileID: 1094275683}
   state: 0
-  magicSlider: {fileID: 383365200}
   pushBackCost: 5
   windStrikeCost: 8
+  magicSlider: {fileID: 383365200}
 --- !u!4 &1371906637
 Transform:
   m_ObjectHideFlags: 0

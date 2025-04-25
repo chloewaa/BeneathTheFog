@@ -9,9 +9,7 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
-    public string battleSceneName = "BattleScene";  // ← new
-
-    //UI buttons
+    [Header("UI Buttons")]
     public Button attackButton; 
     public Button defendButton;
     public Button healButton;
@@ -19,49 +17,60 @@ public class BattleSystem : MonoBehaviour
     public Button pushBackButton;         
     public Button magicAttackButton;      
 
+    [Header("Prefabs")]
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
 
+    [Header("Stations")]
     public Transform playerBattleStation;
     public Transform enemyBattleStation;
 
+    [Header("Scene name")]
     public string explorationSceneName = "Scene 01"; 
+    public string battleSceneName = "BattleScene";
 
+    [Header("Units")]
     Unit playerUnit; 
     Unit enemyUnit; 
 
+    [Header("Text Mesh Pro")]
     public TextMeshProUGUI dialogueText; 
 
+    [Header("HUDs")]
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD; 
     public BattleState state;
 
-    //Track if the player is defending 
-    private bool isPlayerDefending = false; 
-
-    public Slider magicSlider;          // UI slider for MP
-    public int pushBackCost = 5;        // MP cost for Push Back
-    public int windStrikeCost = 8;      // MP cost for Wind Strike
+    [Header("Variables")]
+    private bool isPlayerDefending = false;          
+    public int pushBackCost = 5;        
+    public int windStrikeCost = 8;      
     private int fogBuffTurnsRemaining = 0;
-    private float fogDamageMultiplier = 1.5f;  // 50% extra damage
+    private float fogDamageMultiplier = 1.5f;  
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("References")]
+    Animator animator;
+    SpriteRenderer spriteRenderer; 
+    public Slider magicSlider;
+
     void Start()
     {
         state = BattleState.START;
         StartCoroutine(SetupBattle());
+        //Get animator attached to this GameObject
+        animator = GetComponent<Animator>();
     }
 
     IEnumerator SetupBattle() {
-        // Get player unit information
+        //Get player unit information
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
 
-        // Get enemy unit information
+        //Get enemy unit information
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation); 
         enemyUnit = enemyGO.GetComponent<Unit>();
 
-        // Display enemy name
+        //Display enemy name
         dialogueText.text = enemyUnit.unitName + " approaches!";
 
         //Buttons are disabled until player turn
@@ -74,7 +83,7 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit); 
 
-        // initialize MP slider
+        //initialize MP slider
         magicSlider.maxValue = playerUnit.maxMP;
         magicSlider.value = playerUnit.currentMP;
 
@@ -105,6 +114,9 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
+
+        //Play the attack animation
+        playerUnit.animator.SetTrigger("Attack");
     }
 
     IEnumerator EnemyTurn() {
@@ -112,7 +124,7 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        // Calculate damage, halving if defending
+        //Calculate damage, halving if defending
         int incoming = enemyUnit.damage;
         if(isPlayerDefending) {
             incoming = Mathf.Max(1, incoming / 2);  
@@ -132,6 +144,9 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.PLAYERTURN;
             PlayerTurn();
         }
+
+        //Play enemy attack animation
+        enemyUnit.animator.SetTrigger("Melee");
     }
 
     void EndBattle() {
@@ -150,6 +165,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator ExitBattleAfterDelay(float delay) {
         yield return new WaitForSeconds(delay);
+
         // Load the exploration scene (this will replace the current scene)
         SceneManager.UnloadSceneAsync(battleSceneName);
     }
@@ -160,7 +176,8 @@ public class BattleSystem : MonoBehaviour
         attackButton.interactable = true;
         defendButton.interactable = true;
         healButton.interactable = true;
-        // ...but hide the sub‑options until Magic is clicked
+
+        //but hide the sub‑options until Magic is clicked
         pushBackButton.gameObject.SetActive(false);
         magicAttackButton.gameObject.SetActive(false);
 
@@ -188,6 +205,9 @@ public class BattleSystem : MonoBehaviour
 
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
+
+        //Defend Animation 
+        playerUnit.animator.SetTrigger("Defend");
     }
 
     public void OnAttackButton() {
@@ -222,12 +242,12 @@ public class BattleSystem : MonoBehaviour
 
     public void OnMagicButton() {
         if (state != BattleState.PLAYERTURN) return;
-        // disable the big buttons
+        //disable the big buttons
         attackButton.interactable = healButton.interactable
                                 = defendButton.interactable
                                 = magicButton.interactable 
                                 = false;
-        // show the two choices
+        //show the two choices
         pushBackButton.gameObject.SetActive(true);
         magicAttackButton.gameObject.SetActive(true);
 
@@ -256,17 +276,20 @@ public class BattleSystem : MonoBehaviour
             yield break;
         }
 
-        // drain MP
+        //drain MP
         playerUnit.currentMP -= pushBackCost;
         magicSlider.value = playerUnit.currentMP;
 
-        // apply fog buff...
+        //apply fog buff
         fogBuffTurnsRemaining = 3;
         dialogueText.text = "Pushed into the fog! Enemy takes +50% damage for 3 turns.";
         yield return new WaitForSeconds(1.5f);
 
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
+
+        //Play magic animation
+        playerUnit.animator.SetTrigger("MagicAttack");
     }
 
     IEnumerator PlayerMagicAttack() {
@@ -303,5 +326,8 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
+
+        //Play magic animation
+        playerUnit.animator.SetTrigger("MagicAttack");
     }
 }

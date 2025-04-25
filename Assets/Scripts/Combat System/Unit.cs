@@ -1,3 +1,6 @@
+
+using System.Collections; 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Unit : MonoBehaviour
@@ -14,39 +17,40 @@ public class Unit : MonoBehaviour
     public int damage;
 
     [Header("Magic")]
-    public int maxMP;           // ← total MP
-    [HideInInspector] public int currentMP;   // ← current MP
-    public int magicDamage;     // ← base magic‑attack power
+    public int maxMP;           
+    [HideInInspector] public int currentMP;   
+    public int magicDamage; 
 
-    void Awake()
-    {
-        // initialize HP/MP on spawn
+    [Header("Animation")]
+    public Animator animator;
+
+    void Awake() {
+        //initialize HP/MP on spawn
         currentHP = maxHP;
         currentMP = maxMP;
+
+        animator = GetComponent<Animator>(); 
     }
 
-    /// <summary>
-    /// Subtract HP and return true if unit dies.
-    /// </summary>
-    public bool TakeDamage(int dmg)
-    {
+    public bool TakeDamage(int dmg) {
+        //Subtract HP and return true if unit dies.
         currentHP -= dmg;
         return currentHP <= 0;
+
+        //Play hit animation
+        animator.SetTrigger("Hit");
     }
 
-    /// <summary>
-    /// Heal up to maxHP.
-    /// </summary>
-    public void Heal(int amount)
-    {
+    public void Heal(int amount) {
+        //Heal up to maxHP.
         currentHP = Mathf.Min(currentHP + amount, maxHP);
+
+        //Flash green to indicate healing
+        StartCoroutine(FlashColor(Color.green, 0.2f));
     }
 
-    /// <summary>
-    /// Try to spend MP. Returns true if you had enough.
-    /// </summary>
-    public bool UseMP(int cost)
-    {
+    public bool UseMP(int cost) {
+        //Try to spend MP. Returns true if you had enough.
         if (currentMP >= cost)
         {
             currentMP -= cost;
@@ -54,4 +58,16 @@ public class Unit : MonoBehaviour
         }
         return false;
     }
+
+    public IEnumerator FlashColor(Color flashColor, float duration) {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>(); 
+        if(spriteRenderer == null) yield break;
+
+        Color originalColor = spriteRenderer.color;
+        spriteRenderer.color = flashColor;
+
+        yield return new WaitForSeconds(duration);
+
+        spriteRenderer.color = originalColor; 
+    }   
 }
