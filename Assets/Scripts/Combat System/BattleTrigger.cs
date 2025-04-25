@@ -3,15 +3,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BattleTrigger : MonoBehaviour {
+    [Header("Scene names")]
+    //Battle scene and splash scene
     public string battleSceneName   = "BattleScene";
     public string splashScreenScene = "BattleSplash";
-    public GameObject orc;          // Assign your Orc GameObject in the Inspector
 
+    [Header("References")]
+    public GameObject orc;         
     private bool triggered;
     private Collider2D col;
+    public Canvas canvasToHide;
 
     private void Awake() {
-        // 1) Grab & re‑enable the collider, reset trigger flag & orc
+        //Grab & re‑enable the collider, reset trigger flag & orc
         triggered = false;
         col       = GetComponent<Collider2D>();
         if (col    != null) col.enabled   = true;
@@ -22,8 +26,8 @@ public class BattleTrigger : MonoBehaviour {
         if (triggered || !other.CompareTag("Player")) return;
         triggered = true;
 
-        // 2) Disable just the collider so we can't retrigger,
-        //    and hide the orc for good when we return.
+        //Disable just the collider so we can't retrigger,
+        //and hide the orc for good when we return.
         if (col    != null) col.enabled   = false;
         if (orc    != null) orc.SetActive(false);
 
@@ -31,18 +35,27 @@ public class BattleTrigger : MonoBehaviour {
     }
 
     private IEnumerator TransitionToBattle() {
-        // 3) Splash screen (additive so exploration stays alive)
+        if(canvasToHide != null) {
+            //Disable the canvas to hide the exploration UI
+            canvasToHide.enabled = false;
+        }
+        
+        //Splash screen 
         SceneManager.LoadScene(splashScreenScene, LoadSceneMode.Additive);
         yield return new WaitForSeconds(1.5f);
         SceneManager.UnloadSceneAsync(splashScreenScene);
 
-        // 4) Battle scene (additive on top)
+        //Battle scene 
         SceneManager.LoadScene(battleSceneName, LoadSceneMode.Additive);
     }
 
-    // 5) Call this from your BattleSystem when the fight ends:
     public void ReturnToExploration() {
-        // Unload the battle scene, revealing exploration exactly as you left it
+        //Unload the battle scene, revealing exploration 
         SceneManager.UnloadSceneAsync(battleSceneName);
+
+        if(canvasToHide != null) {
+            //Re-enable the canvas to show the exploration UI
+            canvasToHide.enabled = true;
+        }
     }
 }

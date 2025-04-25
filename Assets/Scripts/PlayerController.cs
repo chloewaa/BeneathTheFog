@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     //Movement speed
-    [SerializeField] private float moveSpeed = 5f; 
+    public float moveSpeed = 5f; 
     //Current input vector
     private Vector2 moveInput;                       
     private Rigidbody2D rb;                          
@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
         GameEventsManager.instance.dialogueEvents.onDialogueStarted += DisableMovement;
         GameEventsManager.instance.dialogueEvents.onDialogueFinished += EnableMovement;
         
-        // Optional: Also listen to input context changes
         GameEventsManager.instance.inputEvents.onInputContextChanged += OnInputContextChanged;
     }
 
@@ -68,8 +67,6 @@ public class PlayerController : MonoBehaviour
     private void DisableMovement()
     {
         movementEnabled = false;
-        // Optional: immediately stop any movement that's in progress
-        // For example: rigidbody.velocity = Vector3.zero;
     }
     
     private void EnableMovement()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CollectCoinsQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: CollectCoinsQuest
-  displayName: collect the coins
+  displayName: 'Collect Leaves '
   levelRequirement: 1
   questPrerequisites: []
   questStepPrefab:

@@ -131,3 +131,4 @@ MonoBehaviour:
   maxMP: 40
   currentMP: 0
   magicDamage: 5
+  animator: {fileID: 7772629288808308792}

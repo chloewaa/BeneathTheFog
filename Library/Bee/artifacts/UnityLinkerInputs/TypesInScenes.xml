@@ -4,11 +4,13 @@
 		<type fullname="BattleSystem" preserve="nothing"/>
 		<type fullname="BattleTrigger" preserve="nothing"/>
 		<type fullname="Coin" preserve="nothing"/>
-		<type fullname="CollectCoinsQuestStep" preserve="nothing"/>
+		<type fullname="CollectLeavesQuestStep" preserve="nothing"/>
 		<type fullname="CompanionFollow" preserve="nothing"/>
 		<type fullname="DialogueChoiceButton" preserve="nothing"/>
 		<type fullname="DialogueManager" preserve="nothing"/>
 		<type fullname="DialoguePanelUI" preserve="nothing"/>
+		<type fullname="FogMeterSystem" preserve="nothing"/>
+		<type fullname="FogZone" preserve="nothing"/>
 		<type fullname="GameEventsManager" preserve="nothing"/>
 		<type fullname="GlobalConstants" preserve="nothing"/>
 		<type fullname="GoldManager" preserve="nothing"/>

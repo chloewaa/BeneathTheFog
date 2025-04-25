@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectCoinsQuestStep : QuestStep
+public class CollectLeavesQuestStep : QuestStep
 {
-    private int coinsCollected = 0; 
-    private int coinsToComplete = 5;
+    private int leavesCollected = 0; 
+    private int leavesToComplete = 5;
 
     private void Start() {
         UpdateState();
@@ -20,25 +20,25 @@ public class CollectCoinsQuestStep : QuestStep
     }
 
     private void CoinCollected() {
-        if(coinsCollected < coinsToComplete) {
-            coinsCollected++;
+        if(leavesCollected < leavesToComplete) {
+            leavesCollected++;
             UpdateState();
-            Debug.Log("Coins Collected: " + coinsCollected);
+            Debug.Log("Coins Collected: " + leavesCollected);
         }
 
-        if(coinsCollected >= coinsToComplete) {
+        if(leavesCollected >= leavesToComplete) {
             FinishQuestStep();
         }
     }
 
     private void UpdateState() {
-        string state = coinsCollected.ToString();
-        string status = coinsCollected + "/" + coinsToComplete + " coins.";
+        string state = leavesCollected.ToString();
+        string status = leavesCollected + "/" + leavesToComplete + " leaves.";
         ChangeState(state, status);
     }
 
     protected override void SetQuestStepState(string state) {
-        this.coinsCollected = System.Int32.Parse(state);
+        this.leavesCollected = System.Int32.Parse(state);
         UpdateState();
     }
 

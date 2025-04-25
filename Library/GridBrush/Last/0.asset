@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Default Brush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 11400000, guid: 49b8efda2f40108478d85bfd24f76646, type: 2}
+  - m_Tile: {fileID: 11400000, guid: 630ae2400b183af418d87c71d5cc78aa, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -32,7 +32,83 @@ MonoBehaviour:
       e32: 0
       e33: 1
     m_Color: {r: 1, g: 1, b: 1, a: 1}
-  - m_Tile: {fileID: 11400000, guid: 91702304e9489a34199314db90ed8664, type: 2}
+  - m_Tile: {fileID: 11400000, guid: 681d40d20f85c834b95688a7b0c57634, type: 2}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  - m_Tile: {fileID: 11400000, guid: 273444cff201b7849ab807e9bf6bc110, type: 2}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  - m_Tile: {fileID: 11400000, guid: ca4cac8252b3b1a458f9c5ce8090a1a6, type: 2}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  - m_Tile: {fileID: 11400000, guid: ccce9931ada10a343abcf697576d8615, type: 2}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  - m_Tile: {fileID: 11400000, guid: 00f36bfae025b7649b0ac531c56d05c2, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -52,8 +128,8 @@ MonoBehaviour:
       e33: 1
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_TileChangeDataList: []
-  m_Size: {x: 2, y: 1, z: 1}
-  m_Pivot: {x: 1, y: 0, z: 0}
+  m_Size: {x: 2, y: 3, z: 1}
+  m_Pivot: {x: 1, y: 2, z: 0}
   m_CanChangeZPosition: 0
   m_FloodFillContiguousOnly: 1
   m_LastPickedLayout: 0

@@ -39,7 +39,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "CollectCoinsQuestStep",
+            "fullManagedTypeName": "CollectLeavesQuestStep",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -88,6 +88,20 @@
                 "Assets/Scenes/BattleSplashScreen.unity",
                 "Assets/Scenes/Scene 01.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FogMeterSystem",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FogZone",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",

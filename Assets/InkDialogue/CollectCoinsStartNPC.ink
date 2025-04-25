@@ -12,28 +12,32 @@
 -> END
 
 = canStart
-Hey!
-You must be new around here.
-My cat took my neighbor's coin pouch and now coins are scattered all over town!
-Would you collect them for me and return them to Kaelen?
-* [Sure.]
+Huh...a stranger.
+Have you seen the fog closing in around the village?
+This fog takes people, it twists their minds.
+They become shells of their former selves.
+Poor Kaelen's daughter wandered too far into the fog yesterday...
+* [Can I help?]
 ~StartQuest("CollectCoinsQuest")
-Great! He lives right across the river from me.
+If you really want to, you can collect some Mistleaf.
+It's usually scattered around the village from the wind. 
+It may be enough to wake her from her sleep. 
 -> DONE
-* [No way.]
-Leave me alone then.
+* [Well, that's too bad.]
+It is indeed.
+Perhaps she'll never wake...
 -> END 
 
 = inProgress
-Have you collected the coins yet?
-I bet Kaelen needs them!
+Have you collected the leaves yet?
+I bet Kaelen's daughter could use them.
 -> END
 
 = canFinish
-You have the coins?
+You have the leaves?
 Go give them to Kaelen then.
 -> END
 
 = finished
-Thanks for collecting the coins, you're a life saver!
+Thanks for collecting the leaves, lets hope she wakes up. 
 -> END

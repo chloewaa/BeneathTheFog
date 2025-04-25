@@ -5,14 +5,16 @@
 }
     
 = finished
-thank you!
+thank you for your help.
 -> END
 
 = default 
 What do you want?
 *[Nothing, never mind]
 -> END
-* {CollectCoinsQuestState == " CAN_FINISH"} [Here are the coins you lost]
+* {CollectCoinsQuestState == "CAN_FINISH"} [I brought some Mistleaf.]
  ~FinishQuest(CollectCoinsQuestId)
- Oh wow! Thanks!
+ Mistleaf? 
+ I suppose the scent could wake her.
+ Thank you for collecting this for my daughter.
  -> END

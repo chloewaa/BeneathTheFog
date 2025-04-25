@@ -19,7 +19,7 @@ public class QuestLogUI : MonoBehaviour
     private Button firstSelectedButton;
 
     private void Awake() {
-        // Start hidden
+        //Start hidden
         if (contentParent != null)
             contentParent.SetActive(false);
     }
@@ -31,10 +31,10 @@ public class QuestLogUI : MonoBehaviour
             return;
         }
 
-        // 1) Listen for any future state changes
+        //Listen for any future state changes
         GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
 
-        // 2) Seed the UI with all quests you already have
+        //Seed the UI with all quests you already have
         foreach (Quest q in QuestManager.instance.GetAllQuests())
         {
             QuestStateChange(q);
@@ -47,7 +47,7 @@ public class QuestLogUI : MonoBehaviour
     }
 
     private void Update() {
-        // Toggle on Q press (new Input System)
+        //Toggle on Q press (new Input System)
         if (Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame)
             ToggleUI();
     }
@@ -59,12 +59,25 @@ public class QuestLogUI : MonoBehaviour
             ShowUI();
     }
 
-    private void ShowUI() {
-        contentParent.SetActive(true);
-        GameEventsManager.instance.playerEvents.DisablePlayerMovement();
-        if (firstSelectedButton != null)
-            firstSelectedButton.Select();
+private void ShowUI()
+{
+    contentParent.SetActive(true);
+
+    //Force a canvas/layout update so new buttons show properly
+    Canvas.ForceUpdateCanvases();
+
+    //Force-refresh quest buttons
+    foreach (Quest q in QuestManager.instance.GetAllQuests())
+    {
+        QuestStateChange(q);
     }
+
+    if (firstSelectedButton != null)
+        firstSelectedButton.Select();
+
+    GameEventsManager.instance.playerEvents.DisablePlayerMovement();
+}
+
 
     private void HideUI() {
         contentParent.SetActive(false);
@@ -73,7 +86,7 @@ public class QuestLogUI : MonoBehaviour
     }
 
     private void QuestStateChange(Quest quest) {
-        // Create a button if needed, then update its visual state
+        //Create a button if needed, then update its visual state
         QuestLogButton questLogButton = scrollingList.CreateButtonIfNotExists(quest, () => SetQuestLogInfo(quest));
 
         if (firstSelectedButton == null)
@@ -87,7 +100,7 @@ public class QuestLogUI : MonoBehaviour
         questStatusText.text         = quest.GetFullStatusText();
         levelRequirementText.text    = "Level: " + quest.info.levelRequirement;
 
-        // Prerequisites list
+        //Prerequisites list
         questRequirementsText.text   = "Requirements:\n";
         foreach (QuestInfoSO prereq in quest.info.questPrerequisites)
         {
