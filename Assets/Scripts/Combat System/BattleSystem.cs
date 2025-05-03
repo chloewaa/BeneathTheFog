@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
-public class BattleSystem : MonoBehaviour
-{
+public class BattleSystem : MonoBehaviour {
     [Header("UI Buttons")]
     public Button attackButton;
     public Button defendButton;

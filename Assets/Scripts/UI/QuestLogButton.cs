@@ -4,14 +4,12 @@ using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.UI;
 
-public class QuestLogButton : MonoBehaviour, ISelectHandler
-{
+public class QuestLogButton : MonoBehaviour, ISelectHandler {
     public Button button { get; private set; }
     private TextMeshProUGUI buttonText; 
     private UnityAction onSelectAction;
 
-    public void Initialize(string displayName, UnityAction selectAction)
-    {
+    public void Initialize(string displayName, UnityAction selectAction) {
         this.button = this.GetComponent<Button>();
         this.buttonText = this.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -19,8 +17,7 @@ public class QuestLogButton : MonoBehaviour, ISelectHandler
         this.onSelectAction = selectAction;
     }
 
-    public void OnSelect(BaseEventData eventData)
-    {
+    public void OnSelect(BaseEventData eventData) {
         onSelectAction();
     }
 

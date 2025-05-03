@@ -113,6 +113,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -385,12 +386,14 @@
 "Assets/Scripts/Combat System/BattleSystem.cs"
 "Assets/Scripts/Combat System/BattleTrigger.cs"
 "Assets/Scripts/Combat System/Unit.cs"
-"Assets/Scripts/CompanionFollow.cs"
+"Assets/Scripts/Companion/CompanionCollider.cs"
+"Assets/Scripts/Companion/CompanionFollow.cs"
 "Assets/Scripts/Dialogue/DialogueEvents.cs"
 "Assets/Scripts/Dialogue/DialogueManager.cs"
 "Assets/Scripts/Dialogue/DialogueTrigger.cs"
 "Assets/Scripts/Dialogue/InkDialogueVariables.cs"
 "Assets/Scripts/Dialogue/InkExternalFunctions.cs"
+"Assets/Scripts/Events/GameEventsManager.cs"
 "Assets/Scripts/Events/GoldEvents.cs"
 "Assets/Scripts/Events/InputEvents.cs"
 "Assets/Scripts/Events/MiscEvents.cs"
@@ -398,12 +401,11 @@
 "Assets/Scripts/Events/QuestEvents.cs"
 "Assets/Scripts/Fog System/FogMeterSystem.cs"
 "Assets/Scripts/Fog System/FogZone.cs"
-"Assets/Scripts/GameEventsManager.cs"
 "Assets/Scripts/GlobalConstants.cs"
 "Assets/Scripts/GoldManager.cs"
 "Assets/Scripts/Input/InputEventContext.cs"
+"Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerLevelManager.cs"
-"Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Quest System/Quest.cs"
 "Assets/Scripts/Quest System/QuestData.cs"
 "Assets/Scripts/Quest System/QuestInfoSO.cs"
@@ -414,6 +416,7 @@
 "Assets/Scripts/Quest System/QuestStepState.cs"
 "Assets/Scripts/UI/DialogueChoiceButton.cs"
 "Assets/Scripts/UI/DialoguePanelUI.cs"
+"Assets/Scripts/UI/InteractPrompt.cs"
 "Assets/Scripts/UI/QuestLogButton.cs"
 "Assets/Scripts/UI/QuestLogScrollingList.cs"
 "Assets/Scripts/UI/QuestLogUI.cs"

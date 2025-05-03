@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public abstract class QuestStep : MonoBehaviour
-{
+public abstract class QuestStep : MonoBehaviour {
     private bool isFinished = false;
     private string questId; 
     private int stepIndex;

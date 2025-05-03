@@ -15,7 +15,7 @@ public class BattleTrigger : MonoBehaviour {
     public Canvas canvasToHide;
 
     private void Awake() {
-        //Grab & re‑enable the collider, reset trigger flag & orc
+        //Grab and re‑enable the collider, reset trigger flag & orc
         triggered = false;
         col       = GetComponent<Collider2D>();
         if (col    != null) col.enabled   = true;

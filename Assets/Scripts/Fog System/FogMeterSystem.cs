@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; 
 
-public class FogMeterSystem : MonoBehaviour
-{
+public class FogMeterSystem : MonoBehaviour {
     [Header("Fog Meter Settings")]
     public float maxFogControl = 100f;
     public float currentFogControl;
@@ -25,58 +24,47 @@ public class FogMeterSystem : MonoBehaviour
     private bool isDraining = false; 
     private PlayerController playerController; 
 
-    void Start()
-    {
+    void Start() {
         currentFogControl = maxFogControl;
         fogSlider.maxValue = maxFogControl;
         fogSlider.value = currentFogControl;
         playerController = GetComponent<PlayerController>(); 
     }
 
-    void Update()
-    {
-        if (isDraining)
-        {
+    void Update() {
+        if (isDraining) {
             currentFogControl -= drainRate * Time.deltaTime;
-        }
-        else
-        {
+        } else {
             currentFogControl = Mathf.Min(currentFogControl + regenRate * Time.deltaTime, maxFogControl);
         }
 
         fogSlider.value = currentFogControl;
 
-        if (currentFogControl <= 0)
-        {
+        if (currentFogControl <= 0) {
             PlayerPassOut();
         }
-        if (playerController != null)
-        {
+        if (playerController != null) {
             float speedPercent = currentFogControl / maxFogControl;
             speedPercent = Mathf.Clamp01(speedPercent);
 
             playerController.moveSpeed = Mathf.Lerp(minPlayerSpeed, maxPlayerSpeed, speedPercent);
-}
+        }
     }
 
-    void PlayerPassOut()
-    {
+    void PlayerPassOut() {
         Debug.Log("Player passed out from fog exposure.");
 
         // Teleport player to respawn point
-        if (respawnPoint != null)
-        {
+        if (respawnPoint != null) {
             transform.position = respawnPoint.position;
 
             // Teleport companion to match
-        if (companionTransform != null)
-        {
+        if (companionTransform != null) {
             companionTransform.position = respawnPoint.position;
 
             // Reset animator if it exists
             Animator compAnim = companionTransform.GetComponent<Animator>();
-            if (compAnim != null)
-            {
+            if (compAnim != null) {
                 compAnim.SetBool("IsMoving", false);
                 compAnim.SetFloat("Horizontal", 0f);
                 compAnim.SetFloat("Vertical", -1f); // Default facing direction, adjust if needed
@@ -84,14 +72,12 @@ public class FogMeterSystem : MonoBehaviour
         }
 
         }
-
         // Restore fog meter
         currentFogControl = maxFogControl;
         fogSlider.value = currentFogControl;
     }
 
-    public void SetFogDraining(bool draining)
-    {
+    public void SetFogDraining(bool draining) {
         isDraining = draining;
     }
 }

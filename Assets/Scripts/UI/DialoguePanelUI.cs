@@ -4,8 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 
-public class DialoguePanelUI : MonoBehaviour
-{
+public class DialoguePanelUI : MonoBehaviour {
    [Header("Components")]
     [SerializeField] private GameObject contentParent;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -42,17 +41,15 @@ public class DialoguePanelUI : MonoBehaviour
     private void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices) {
         dialogueText.text = dialogueLine;
 
-        // defensive check - if there are more choices coming in than we can support, log an error
-        if (dialogueChoices.Count > choiceButtons.Length) 
-        {
+        //defensive check - if there are more choices coming in than we can support, log an error
+        if (dialogueChoices.Count > choiceButtons.Length) {
             Debug.LogError("More dialogue choices ("
                 + dialogueChoices.Count + ") came through than are supported ("
                 + choiceButtons.Length + ").");
         }
 
         // start with all of the choice buttons hidden
-        foreach (DialogueChoiceButton choiceButton in choiceButtons) 
-        {
+        foreach (DialogueChoiceButton choiceButton in choiceButtons) {
             choiceButton.gameObject.SetActive(false);
         }
 

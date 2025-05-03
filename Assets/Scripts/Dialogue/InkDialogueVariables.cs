@@ -2,8 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Ink.Runtime;
 
-public class InkDialogueVariables 
-{
+public class InkDialogueVariables {
     private Dictionary<string, Ink.Runtime.Object> variables;
 
     public InkDialogueVariables(Story story) {

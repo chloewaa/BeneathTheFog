@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestManager : MonoBehaviour
-{
+public class QuestManager : MonoBehaviour {
     // Singleton instance
     public static QuestManager instance { get; private set; }
 
@@ -24,7 +23,7 @@ public class QuestManager : MonoBehaviour
         // Build the quest map
         questMap = CreateQuestMap();
 
-        // (Optional) Example retrieval
+        // retrieval
         Quest quest = GetQuestById("CollectCoinsQuest");
     }
 

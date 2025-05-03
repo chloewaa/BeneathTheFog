@@ -5,6 +5,7 @@
 		<type fullname="BattleTrigger" preserve="nothing"/>
 		<type fullname="Coin" preserve="nothing"/>
 		<type fullname="CollectLeavesQuestStep" preserve="nothing"/>
+		<type fullname="CompanionCollider" preserve="nothing"/>
 		<type fullname="CompanionFollow" preserve="nothing"/>
 		<type fullname="DialogueChoiceButton" preserve="nothing"/>
 		<type fullname="DialogueManager" preserve="nothing"/>
@@ -15,6 +16,7 @@
 		<type fullname="GlobalConstants" preserve="nothing"/>
 		<type fullname="GoldManager" preserve="nothing"/>
 		<type fullname="InputEvents" preserve="nothing"/>
+		<type fullname="InteractPrompt" preserve="nothing"/>
 		<type fullname="PlayerController" preserve="nothing"/>
 		<type fullname="PlayerLevelManager" preserve="nothing"/>
 		<type fullname="QuestInfoSO" preserve="nothing"/>

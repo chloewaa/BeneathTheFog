@@ -2,8 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 
-public class InputEvents : MonoBehaviour
-{
+public class InputEvents : MonoBehaviour {
     private InputEventContext _inputEventContext = InputEventContext.DEFAULT;
     
     // Add an event for context changes
@@ -30,14 +29,12 @@ public class InputEvents : MonoBehaviour
     private InputAction submitAction;
     private InputAction questLogToggleAction;
 
-    private void Awake()
-    {
+    private void Awake() {
         submitAction = new InputAction("Submit", binding: "<Keyboard>/e");
         questLogToggleAction = new InputAction("QuestLogToggle", binding: "<Keyboard>/q");
     }
 
-    private void OnEnable()
-    {
+    private void OnEnable() {
         submitAction.Enable();
         submitAction.performed += OnSubmitPerformed;
 
@@ -45,8 +42,7 @@ public class InputEvents : MonoBehaviour
         questLogToggleAction.performed += OnQuestLogTogglePerformed;
     }
 
-    private void OnDisable()
-    {
+    private void OnDisable() {
         submitAction.performed -= OnSubmitPerformed;
         submitAction.Disable();
 
@@ -54,25 +50,20 @@ public class InputEvents : MonoBehaviour
         questLogToggleAction.Disable();
     }
 
-    private void OnSubmitPerformed(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
+    private void OnSubmitPerformed(InputAction.CallbackContext context) {
+        if (context.performed) {
             // Invoke the event with current context
             onSubmitPressed?.Invoke(inputEventContext);
         }
     }
 
     // Public method for invoking submit without a CallbackContext
-    public void SubmitPressed()
-    {
+    public void SubmitPressed() {
         onSubmitPressed?.Invoke(inputEventContext);
     }
 
-    private void OnQuestLogTogglePerformed(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
+    private void OnQuestLogTogglePerformed(InputAction.CallbackContext context) {
+        if (context.performed) {
             onQuestLogTogglePressed?.Invoke();
         }
     }

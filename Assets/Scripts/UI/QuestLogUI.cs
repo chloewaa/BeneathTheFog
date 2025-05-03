@@ -5,8 +5,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class QuestLogUI : MonoBehaviour
-{
+public class QuestLogUI : MonoBehaviour {
     [Header("Components")]
     [SerializeField] private GameObject contentParent;
     [SerializeField] private QuestLogScrollingList scrollingList;
@@ -25,8 +24,7 @@ public class QuestLogUI : MonoBehaviour
     }
 
     private void OnEnable() {
-        if (GameEventsManager.instance == null || GameEventsManager.instance.questEvents == null)
-        {
+        if (GameEventsManager.instance == null || GameEventsManager.instance.questEvents == null) {
             Debug.LogError("GameEventsManager or questEvents is null! Ensure both exist in the scene.");
             return;
         }
@@ -35,8 +33,7 @@ public class QuestLogUI : MonoBehaviour
         GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
 
         //Seed the UI with all quests you already have
-        foreach (Quest q in QuestManager.instance.GetAllQuests())
-        {
+        foreach (Quest q in QuestManager.instance.GetAllQuests()) {
             QuestStateChange(q);
         }
     }
@@ -59,24 +56,22 @@ public class QuestLogUI : MonoBehaviour
             ShowUI();
     }
 
-private void ShowUI()
-{
-    contentParent.SetActive(true);
+    private void ShowUI() {
+        contentParent.SetActive(true);
 
-    //Force a canvas/layout update so new buttons show properly
-    Canvas.ForceUpdateCanvases();
+        //Force a canvas/layout update so new buttons show properly
+        Canvas.ForceUpdateCanvases();
 
-    //Force-refresh quest buttons
-    foreach (Quest q in QuestManager.instance.GetAllQuests())
-    {
-        QuestStateChange(q);
+        //Force-refresh quest buttons
+        foreach (Quest q in QuestManager.instance.GetAllQuests()) {
+            QuestStateChange(q);
+        }
+
+        if (firstSelectedButton != null)
+            firstSelectedButton.Select();
+
+        GameEventsManager.instance.playerEvents.DisablePlayerMovement();
     }
-
-    if (firstSelectedButton != null)
-        firstSelectedButton.Select();
-
-    GameEventsManager.instance.playerEvents.DisablePlayerMovement();
-}
 
 
     private void HideUI() {
@@ -102,8 +97,7 @@ private void ShowUI()
 
         //Prerequisites list
         questRequirementsText.text   = "Requirements:\n";
-        foreach (QuestInfoSO prereq in quest.info.questPrerequisites)
-        {
+        foreach (QuestInfoSO prereq in quest.info.questPrerequisites) {
             questRequirementsText.text += "- " + prereq.displayName + "\n";
         }
 

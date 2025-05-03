@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Unit : MonoBehaviour
-{
+public class Unit : MonoBehaviour {
     [Header("Basic Stats")]
     public string unitName;
     public int unitLevel;

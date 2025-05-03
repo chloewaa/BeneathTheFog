@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 
-public class DialogueManager : MonoBehaviour
-{
+public class DialogueManager : MonoBehaviour {
     [Header ("Ink Story")]
     [SerializeField] private TextAsset inkJson;
     private Story story;
@@ -126,11 +125,9 @@ public class DialogueManager : MonoBehaviour
             if(story.currentChoices.Count > 0) {
                 CreateChoiceButtons(story.currentChoices);
             }
-        }
-        else if(story.currentChoices.Count == 0) {
+        } else if(story.currentChoices.Count == 0) {
             ExitDialogue();
-        }
-        else if(story.currentChoices.Count > 0) {
+        } else if(story.currentChoices.Count > 0) {
             // We're at a choice point but no choice has been made yet
             CreateChoiceButtons(story.currentChoices);
         }

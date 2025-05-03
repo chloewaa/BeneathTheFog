@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
-public class Coin : MonoBehaviour
-{
+public class Coin : MonoBehaviour {
     [Header("Config")]
     [SerializeField] private float respawnTimeSeconds = 8;
     [SerializeField] private int goldGained = 1;
@@ -12,32 +11,27 @@ public class Coin : MonoBehaviour
     private CircleCollider2D circleCollider;
     private SpriteRenderer visual;
 
-    private void Awake() 
-    {
+    private void Awake() {
         circleCollider = GetComponent<CircleCollider2D>();
         visual = GetComponentInChildren<SpriteRenderer>();
     }
 
-private void CollectCoin() 
-{
-    circleCollider.enabled = false;
-    visual.enabled = false; // Only disable the sprite renderer
-    GameEventsManager.instance.goldEvents.GoldGained(goldGained);
-    GameEventsManager.instance.miscEvents.CoinCollected();
-    StopAllCoroutines();
-    StartCoroutine(RespawnAfterTime());
-}
-    private IEnumerator RespawnAfterTime()
-    {
+    private void CollectCoin() {
+        circleCollider.enabled = false;
+        visual.enabled = false; // Only disable the sprite renderer
+        GameEventsManager.instance.goldEvents.GoldGained(goldGained);
+        GameEventsManager.instance.miscEvents.CoinCollected();
+        StopAllCoroutines();
+        StartCoroutine(RespawnAfterTime());
+    }
+    private IEnumerator RespawnAfterTime() {
         yield return new WaitForSeconds(respawnTimeSeconds);
         circleCollider.enabled = true;
         visual.gameObject.SetActive(true);
     }
 
-    private void OnTriggerEnter2D(Collider2D otherCollider) 
-    {
-        if (otherCollider.CompareTag("Player"))
-        {
+    private void OnTriggerEnter2D(Collider2D otherCollider)  {
+        if (otherCollider.CompareTag("Player")) {
             CollectCoin();
         }
     }

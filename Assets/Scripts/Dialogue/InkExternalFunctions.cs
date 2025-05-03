@@ -2,8 +2,7 @@ using UnityEngine;
 using Ink.Runtime;
 using System.Collections.Generic;
 
-public class InkExternalFunctions
-{
+public class InkExternalFunctions {
     public void Bind(Story story) {
         story.BindExternalFunction("StartQuest", (string questId) => StartQuest(questId));
         story.BindExternalFunction("AdvanceQuest", (string questId) => AdvanceQuest(questId));

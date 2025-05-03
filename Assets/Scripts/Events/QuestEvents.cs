@@ -1,8 +1,7 @@
 using UnityEngine;
 using System;
 
-public class QuestEvents 
-{
+public class QuestEvents {
     public event Action<string> onStartQuest;
 
     public void StartQuest(string id) {

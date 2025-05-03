@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class QuestLogScrollingList : MonoBehaviour
-{
+public class QuestLogScrollingList : MonoBehaviour {
     [Header("Components")]
     [SerializeField] private GameObject contentParent;
 
@@ -19,24 +18,6 @@ public class QuestLogScrollingList : MonoBehaviour
 
     private void Start() {
         QuestLogButton firstButton = null;
-
-        /*for (int i = 0; i < 20; i++) {
-            // Create a test QuestInfoSO instance with a unique ID for each quest.
-            QuestInfoSO questInfoTest = ScriptableObject.CreateInstance<QuestInfoSO>();
-            questInfoTest.id = "test" + i;  // e.g., "test0", "test1", "test2"
-            questInfoTest.displayName = "Test " + i;
-            questInfoTest.questStepPrefab = new GameObject[0];  // Assuming no quest step prefabs for testing
-            Quest quest = new Quest(questInfoTest);
-
-            QuestLogButton questLogButton = CreateButtonIfNotExists(quest, () => Debug.Log("Selected " + quest.info.displayName));
-            if (i == 0) {
-                firstButton = questLogButton;
-            }
-        }
-
-        if (firstButton != null) {
-            firstButton.button.Select();
-        }*/
     }
 
     public QuestLogButton CreateButtonIfNotExists(Quest quest, UnityAction selectAction) {

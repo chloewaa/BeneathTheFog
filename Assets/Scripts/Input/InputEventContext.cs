@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public enum InputEventContext
-{
+public enum InputEventContext {
     DEFAULT,
     DIALOGUE
 }
